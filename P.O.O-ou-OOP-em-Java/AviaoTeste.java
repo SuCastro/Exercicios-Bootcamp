@@ -3,7 +3,7 @@ package P.O.O;
 public class AviaoTeste {
 
 	public static void main(String[] args) {
-		Aviao aviao1 = new Aviao("AirFrance", "Boing A320", "França", 2020);
+		Aviao aviao1 = new Aviao("AirFrance", "Boing A320", "FranÃ§a", 2020);
 		aviao1.getinfoAviao();
 		
 		System.out.println(aviao1.getinfoAviao());
