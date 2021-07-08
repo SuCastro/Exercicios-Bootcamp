@@ -1,4 +1,18 @@
-package LaçosDeRepetição;
+/*	Uma empresa desenvolveu uma pesquisa para saber as caracterÃ­sticas psicolÃ³gicas
+			dos indivÃ­duos de uma regiÃ£o. Para tanto, a cada uma das pessoas era
+			perguntado: idade, sexo (1-feminino / 2-masculino / 3-Outros), e as 
+			opÃ§Ãµes (1, se a pessoa era calma; 2, se a pessoa era nervosa e 3, se a pessoa
+			era agressiva). Pede-se para elaborar um sistema que permita ler os dados de
+			150 pessoas, calcule e mostre:
+
+			-nÃºmero de pessoas calmas; 
+			-nÃºmero de mulheres nervosas; 
+			-nÃºmero de homens agressivos; 
+			-nÃºmero de outros calmos;
+			-nÃºmero de pessoas nervosas com mais de 40 anos; 
+			-nÃºmero de pessoas calmas com menos de 18 anos. */
+
+package LaÃ§osDeRepetiÃ§Ã£o;
 
 import java.util.Scanner;
 
@@ -7,24 +21,11 @@ public class Exercicio4 {
 	private static Scanner clear;
 
 	public static void main(String[] args) 
-	{/*	Uma empresa desenvolveu uma pesquisa para saber as características psicológicas
-			dos indivíduos de uma região. Para tanto, a cada uma das pessoas era
-			perguntado: idade, sexo (1-feminino / 2-masculino / 3-Outros), e as 
-			opções (1, se a pessoa era calma; 2, se a pessoa era nervosa e 3, se a pessoa
-			era agressiva). Pede-se para elaborar um sistema que permita ler os dados de
-			150 pessoas, calcule e mostre:
-
-			-número de pessoas calmas; 
-			-número de mulheres nervosas; 
-			-número de homens agressivos; 
-			-número de outros calmos;
-			-número de pessoas nervosas com mais de 40 anos; 
-			-número de pessoas calmas com menos de 18 anos. */
-		
+	{		
 		Scanner leia = new Scanner(System.in);
 				
 		int idade;
-		final int LIMITE = 3; // O LIMITE DE PESSOAS É 150
+		final int LIMITE = 3; // O LIMITE DE PESSOAS Ã‰ 150
 		byte sexo; // (1-feminino / 2-masculino / 3-Outros)
 		byte tipoHumor; 
 		int pessoasCalmas=0, mulheresNervosas=0, homensAgressivos=0, outrosCalmos=0, nervosas40=0, calmasMenor18=0;
