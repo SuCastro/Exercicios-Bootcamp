@@ -1,15 +1,14 @@
-package LaçosDeRepetição;
+/* 6 - 	Escrever um programa que receba vÃ¡rios nÃºmeros inteiros no teclado. E no 
+	final imprimir a mÃ©dia dos nÃºmeros mÃºltiplos de 3. Para sair digitar 0(zero).*/
+
+package LaÃ§osDeRepetiÃ§Ã£o;
 
 import java.util.Scanner;
 
-public class Exercicio6 {
-
+public class Exercicio6 
+{
 	public static void main(String[] args) 
-	{/*
-		6 - Escrever um programa que receba vários números inteiros no teclado. 
-		E no final imprimir a média dos números múltiplos de 3. Para sair digitar
-		0(zero).*/
-		
+	{		
 		int soma = 0,numDigit = 1,contador = 0;
 		double media = 0;
 		
@@ -18,7 +17,7 @@ public class Exercicio6 {
 		
 		do
 		{
-			System.out.print("Digite um número: ");
+			System.out.print("Digite um nÃºmero: ");
 			numDigit = tec.nextInt();
 			
 			if(numDigit%3 == 0 && numDigit > 0) 
@@ -32,10 +31,8 @@ public class Exercicio6 {
 		while(numDigit != 0);
 		
 		media = (soma/contador);
-		System.out.printf("A média final é %.2f",media);
+		System.out.printf("A mÃ©dia final Ã© %.2f",media);
 		
 		tec.close();
-
 	}
-
 }
