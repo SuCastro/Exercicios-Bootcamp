@@ -1,6 +1,6 @@
-/* 2 - 	Crie uma classe avi„o e apresente os atributos e mÈtodos referentes 
- 		esta classe, em seguida crie um objeto avi„o, defina as instancias 
- 		deste objeto e apresente as informaÁıes deste objeto no console. */
+/* 2 - 	Crie uma classe avi√£o e apresente os atributos e m√©todos referentes 
+ 		esta classe, em seguida crie um objeto avi√£o, defina as instancias 
+ 		deste objeto e apresente as informa√ß√µes deste objeto no console. */
 
 package P.O.O;
 
@@ -20,7 +20,7 @@ public class Aviao {
 	
 	public String getinfoAviao()
 	{
-		String infoAviao = "\nCompanhia ¡erea: " +companhiaAerea+ "\nModelo avi„o: " +modeloAviao+ "\nPaÌs do avi„o: " +paisAviao+ "\nAno: " +ano;
+		String infoAviao = "\nCompanhia √Åerea: " +companhiaAerea+ "\nModelo avi√£o: " +modeloAviao+ "\nPa√≠s do avi√£o: " +paisAviao+ "\nAno: " +ano;
 		return infoAviao;
 	}
 }
