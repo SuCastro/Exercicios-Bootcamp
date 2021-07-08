@@ -1,16 +1,16 @@
-/*	Uma empresa desenvolveu uma pesquisa para saber as características psicológicas
-			dos indivíduos de uma região. Para tanto, a cada uma das pessoas era
-			perguntado: idade, sexo (1-feminino / 2-masculino / 3-Outros), e as 
-			opções (1, se a pessoa era calma; 2, se a pessoa era nervosa e 3, se a pessoa
-			era agressiva). Pede-se para elaborar um sistema que permita ler os dados de
-			150 pessoas, calcule e mostre:
+/* 4 - 	Uma empresa desenvolveu uma pesquisa para saber as características psicológicas
+	dos indivíduos de uma região. Para tanto, a cada uma das pessoas era
+	perguntado: idade, sexo (1-feminino / 2-masculino / 3-Outros), e as 
+	opções (1, se a pessoa era calma; 2, se a pessoa era nervosa e 3, se a pessoa
+	era agressiva). Pede-se para elaborar um sistema que permita ler os dados de
+	150 pessoas, calcule e mostre:
 
-			-número de pessoas calmas; 
-			-número de mulheres nervosas; 
-			-número de homens agressivos; 
-			-número de outros calmos;
-			-número de pessoas nervosas com mais de 40 anos; 
-			-número de pessoas calmas com menos de 18 anos. */
+	-número de pessoas calmas; 
+	-número de mulheres nervosas; 
+	-número de homens agressivos; 
+	-número de outros calmos;
+	-número de pessoas nervosas com mais de 40 anos; 
+	-número de pessoas calmas com menos de 18 anos. */
 
 package LaçosDeRepetição;
 
@@ -41,29 +41,28 @@ public class Exercicio4 {
 			tipoHumor = leia.nextByte();
 			leia.nextLine();
 								
+			if (tipoHumor == 1) 
+			{pessoasCalmas = pessoasCalmas + 1;}
 			
-			if (tipoHumor == 1) {
-				pessoasCalmas = pessoasCalmas + 1;
-			}
-			if ((tipoHumor ==2) && (sexo == 1)) {
-				mulheresNervosas = mulheresNervosas +1;
-			}
-			if ((tipoHumor ==3) && (sexo == 2)) {
-				homensAgressivos = homensAgressivos +1;
-			}
-			if ((tipoHumor ==1) && (sexo == 3)) {
-				outrosCalmos = outrosCalmos +1;
-			}
-			if ((tipoHumor ==2) && (idade > 40)) {
-				nervosas40 = nervosas40 +1;
-			}
-			if ((tipoHumor ==1) && (idade < 18)) {
-				calmasMenor18 = calmasMenor18 +1;
-			}
+			if ((tipoHumor ==2) && (sexo == 1)) 
+			{mulheresNervosas = mulheresNervosas +1;}
+			
+			if ((tipoHumor ==3) && (sexo == 2)) 
+			{homensAgressivos = homensAgressivos +1;}
+			
+			if ((tipoHumor ==1) && (sexo == 3)) 
+			{outrosCalmos = outrosCalmos +1;}
+			
+			if ((tipoHumor ==2) && (idade > 40)) 
+			{nervosas40 = nervosas40 +1;}
+			
+			if ((tipoHumor ==1) && (idade < 18)) 
+			{calmasMenor18 = calmasMenor18 +1;}
 			
 			contador++;
 			
 		}
+		
 		System.out.printf("\nTOTAL DE PESSOAS CALMAS : %d", pessoasCalmas);
 		System.out.printf("\nTOTAL DE MULHERES NERVOSAS : %d", mulheresNervosas);
 		System.out.printf("\nTOTAL DE HOMENS AGRESSIVOS : %d", homensAgressivos);
