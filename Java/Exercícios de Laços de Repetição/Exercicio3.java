@@ -1,14 +1,15 @@
-package LaÁosDeRepetiÁ„o;
+/* 3 - 	Solicitar a idade de v√°rias pessoas e imprimir: Total de pessoas 
+	com menos de 21 anos. Total de pessoas com mais de 50 anos. O programa 
+	termina quando idade for =-99.*/
+
+package La√ßosDeRepeti√ß√£o;
 
 import java.util.Scanner;
 
 public class Exercicio3 {
 
 	public static void main(String[] args) 
-	{/* 3 - Solicitar a idade de v·rias pessoas e imprimir: Total de pessoas 
-		com menos de 21 anos. Total de pessoas com mais de 50 anos. O programa 
-		termina quando idade for =-99.*/
-
+	{
 		int idade = 0, cont1 = 0, cont2 = 0;
 		
 		Scanner ler = new Scanner(System.in);
