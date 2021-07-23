@@ -34,6 +34,6 @@ select * from tb_funcionarios where salario > 2000;
 
 select * from tb_funcionarios where salario < 2000;
 
-update tb_funcionarios set setor = 'T.I' where id = '5';
+update tb_funcionarios set setor = 'T.I' where idFuncionario = 5;
 
 select * from tb_funcionarios;
